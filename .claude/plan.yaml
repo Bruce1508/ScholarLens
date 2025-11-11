@@ -1,0 +1,124 @@
+# ==========================================================
+# .claude/plan.yaml
+# Adaptive Scholarship Matching + AI Drafting
+# Execution Blueprint for Claude Code (Template Version)
+# ==========================================================
+# Purpose:
+# This plan defines how Claude Code should interpret and map
+# each AI-driven module in the system to its corresponding
+# prompt definition and logical component.
+#
+# NOTE: This version is a template — owner paths should be
+# updated later once backend code structure is implemented.
+# ==============================================================
+
+modules:
+  - name: "Persona Analysis"
+    description: >
+      Extracts the hidden values, tone, and weighted priorities
+      from scholarship descriptions to form a Scholarship Personality Genome.
+    owner: "TO_BE_DEFINED (e.g., backend/api/controllers/persona_controller.py)"
+    prompt: ".claude/prompts/persona_builder.md"
+    depends_on: []
+    output_schema: "persona (weights, tone, rationale)"
+    status: "planned"
+
+  - name: "Essay Generation"
+    description: >
+      Generates adaptive scholarship essays that align with the extracted
+      persona values and tone, producing paragraph-level focus and alignment scores.
+    owner: "TO_BE_DEFINED (e.g., backend/api/controllers/essay_controller.py)"
+    prompt: ".claude/prompts/essay_generator.md"
+    depends_on:
+      - "Persona Analysis"
+    output_schema: "essay (paragraphs[], focus, reason, alignment_score)"
+    status: "planned"
+
+  - name: "Evaluation Agent"
+    description: >
+      Compares adaptive and baseline essays, quantifies improvement in
+      alignment and tone consistency, and produces an interpretable summary.
+    owner: "TO_BE_DEFINED (e.g., backend/api/controllers/evaluation_controller.py)"
+    prompt: ".claude/prompts/evaluation_agent.md"
+    depends_on:
+      - "Essay Generation"
+    output_schema: "evaluation (alignment_gain, tone_consistency_score, summary)"
+    status: "planned"
+
+  - name: "Mirror Feedback"
+    description: >
+      Analyzes an existing essay (adaptive or human-written) and provides
+      targeted feedback with per-paragraph suggestions for improvement.
+    owner: "TO_BE_DEFINED (e.g., backend/api/controllers/mirror_controller.py)"
+    prompt: ".claude/prompts/mirror_test.md"
+    depends_on:
+      - "Persona Analysis"
+    output_schema: "feedback (paragraph_index, focus_detected, suggestion)"
+    status: "planned"
+
+  - name: "Cluster Labeling"
+    description: >
+      Performs archetype detection on past winner essays, producing
+      named clusters that reveal shared messaging styles and scholarship traits.
+    owner: "TO_BE_DEFINED (e.g., backend/api/controllers/cluster_controller.py)"
+    prompt: ".claude/prompts/cluster_labeler.md"
+    depends_on: []
+    output_schema: "cluster (archetype_name, style_summary, weights)"
+    status: "planned"
+
+# ==========================================================
+# 🔁 Execution Flow (Logical Dependency Chain)
+# ==========================================================
+flow:
+  - step: 1
+    run: "Persona Analysis"
+    produces: "persona.json"
+
+  - step: 2
+    run: "Essay Generation"
+    uses: "persona.json"
+    produces: "adaptive_essay.json"
+
+  - step: 3
+    run: "Evaluation Agent"
+    uses:
+      - "adaptive_essay.json"
+      - "baseline_essay.json"
+    produces: "evaluation.json"
+
+  - step: 4
+    run: "Mirror Feedback"
+    uses: "adaptive_essay.json"
+    produces: "feedback.json"
+
+  - step: 5
+    run: "Cluster Labeling"
+    uses: "winner_essays_corpus"
+    produces: "clusters.json"
+
+# ==========================================================
+# 🧠 Metadata
+# ==========================================================
+metadata:
+  created_by: "Nguyen Duc Anh Vo (Bruce Vo)"
+  last_updated: "TEMPLATE - update when backend implemented"
+  version: "0.1-draft"
+  claude_model: "claude-3-sonnet"
+  project_scope: "Hackathon prototype with modular AI reasoning"
+  documentation_refs:
+    - ".claude/CLAUDE.md"
+    - ".claude/system/task_guide.md"
+    - ".claude/utils/schema_examples.md"
+    - "PROJECT_OVERVIEW.md"
+
+# ==========================================================
+# ✅ Usage Notes
+# ==========================================================
+# 1. When backend code is implemented, replace each "TO_BE_DEFINED"
+#    owner path with the actual file handling that logic.
+# 2. Claude Code will use this plan to auto-map code ↔ prompt
+#    relationships and understand the pipeline order.
+# 3. The `flow` section defines execution sequencing, which can
+#    later be automated in scripts or Plan Mode.
+# 4. This file should live inside `.claude/` root directory.
+# ==========================================================
