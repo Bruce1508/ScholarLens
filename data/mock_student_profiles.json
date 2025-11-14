@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Chen",
+    "email": "alex.chen@example.com",
+    "gpa": 3.85,
+    "activities": [
+      "Robotics Team Captain",
+      "Math Tutoring Volunteer",
+      "Coding Club Founder"
+    ],
+    "achievements": [
+      "1st Place State Robotics Competition",
+      "Developed COVID contact-tracing app for school",
+      "Organized free coding bootcamp for 50+ students"
+    ],
+    "goals": "To leverage AI and robotics to create accessible healthcare solutions for underserved communities"
+  },
+  {
+    "id": 2,
+    "name": "Maria Rodriguez",
+    "email": "maria.rodriguez@example.com",
+    "gpa": 3.72,
+    "activities": [
+      "Community Garden Coordinator",
+      "Student Government Vice President",
+      "Homeless Shelter Volunteer (200+ hours)"
+    ],
+    "achievements": [
+      "Started neighborhood food distribution program",
+      "Raised $15,000 for local youth center",
+      "Mentored 20 at-risk middle school students"
+    ],
+    "goals": "To become a social worker and establish community programs that address systemic poverty"
+  },
+  {
+    "id": 3,
+    "name": "James Thompson",
+    "email": "james.thompson@example.com",
+    "gpa": 3.95,
+    "activities": [
+      "Academic Decathlon Team",
+      "Research Assistant at University Lab",
+      "National Honor Society President"
+    ],
+    "achievements": [
+      "Published research paper on renewable energy",
+      "Perfect scores on 5 AP exams",
+      "Valedictorian candidate"
+    ],
+    "goals": "To pursue a PhD in environmental engineering and develop sustainable energy solutions"
+  }
+]

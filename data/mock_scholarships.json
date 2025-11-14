@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "STEM Leadership Excellence Award",
+    "organization": "Tech Innovation Foundation",
+    "description": "This scholarship recognizes outstanding students who demonstrate exceptional leadership in STEM fields while maintaining strong academic performance. We seek individuals who have initiated technology projects, led robotics teams, or organized STEM education programs for underserved communities. Applicants should show how they've used innovation to solve real-world problems and inspire others in scientific pursuits.",
+    "amount": 10000,
+    "deadline": "2024-06-01",
+    "criteria": "Minimum GPA 3.5, demonstrated leadership in STEM activities, innovation project portfolio"
+  },
+  {
+    "id": 2,
+    "name": "Community Impact Scholarship",
+    "organization": "Social Change Foundation",
+    "description": "Awarded to students who have made significant contributions to their local communities through sustained volunteer work and social initiatives. We value empathy, dedication, and grassroots impact over academic metrics. Ideal candidates have organized community programs, mentored youth, or addressed local social challenges through consistent service and compassionate leadership.",
+    "amount": 7500,
+    "deadline": "2024-05-15",
+    "criteria": "100+ hours community service, demonstrated social impact, leadership in volunteer organizations"
+  },
+  {
+    "id": 3,
+    "name": "Academic Excellence Merit Scholarship",
+    "organization": "National Education Board",
+    "description": "This merit-based scholarship rewards students with exceptional academic achievements across all disciplines. We seek scholars who demonstrate intellectual curiosity, rigorous study habits, and consistent excellence in coursework. Strong performance in advanced placement courses, research projects, and academic competitions will be heavily weighted in selection.",
+    "amount": 15000,
+    "deadline": "2024-04-30",
+    "criteria": "Minimum GPA 3.9, top 5% class rank, advanced coursework completion"
+  },
+  {
+    "id": 4,
+    "name": "Innovation and Entrepreneurship Grant",
+    "organization": "Startup Accelerator Fund",
+    "description": "Supporting the next generation of innovators and entrepreneurs who dare to think differently. This grant is for students who have launched startups, developed novel solutions, or demonstrated creative problem-solving in business or technology. We value originality, market vision, and the courage to transform ideas into reality.",
+    "amount": 12000,
+    "deadline": "2024-07-01",
+    "criteria": "Startup or innovation project, business plan submission, demonstrated entrepreneurial spirit"
+  },
+  {
+    "id": 5,
+    "name": "First-Generation College Student Support Award",
+    "organization": "Education Access Initiative",
+    "description": "Dedicated to supporting first-generation college students who have overcome significant obstacles to pursue higher education. We understand the unique challenges you face and value resilience, determination, and family responsibility. This scholarship considers financial need alongside your inspiring journey and commitment to breaking generational barriers through education.",
+    "amount": 8000,
+    "deadline": "2024-05-30",
+    "criteria": "First-generation college student, demonstrated financial need, overcoming adversity narrative"
+  }
+]

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ScholarLens AI - Insights Lab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3d82fa",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full">
+<!-- SideNavBar -->
+<aside class="flex flex-col w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 p-4 shrink-0">
+<div class="flex flex-col justify-between h-full">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 p-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAugcSIs-7L_7xD5Kzm5W4xIxzaGvQfZ3G8YqXOIQi22coN7VVYRM19sU9iGo9LheTaOlre3hGEVD-sarYBek2s2Wb3pK7RkLmYAtr8_D4t4aaG5_xSVY_DOMw6Y1A-ccA0nXS4bBMVST2NPeuhGmE39zU3_pI89xHR0S9nkF0zG1dOZ72JbHOa4Gk_ZCDx7w2bwKKVxEY7n7vSpjb9JAtqk2t-yNYDnzZatxHO63AxZwirtJqTBL5dsPXZUPHDhur0V69-_koTEVTD");'></div>
+<div class="flex flex-col">
+<h1 class="text-gray-900 dark:text-white text-base font-medium leading-normal">Alex Johnson</h1>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">alex.j@email.com</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">edit_document</span>
+<p class="text-sm font-medium">Essay Generator</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-primary/20" href="#">
+<span class="material-symbols-outlined text-primary dark:text-primary">science</span>
+<p class="text-sm font-medium text-primary dark:text-primary">Insights Lab</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">school</span>
+<p class="text-sm font-medium">Scholarships</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">person</span>
+<p class="text-sm font-medium">Profile</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Upgrade to Pro</span>
+</button>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">settings</span>
+<p class="text-sm font-medium">Settings</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">logout</span>
+<p class="text-sm font-medium">Log out</p>
+</a>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 p-8 overflow-y-auto">
+<div class="max-w-4xl mx-auto">
+<!-- PageHeading -->
+<header class="mb-8">
+<p class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Insights Lab</p>
+</header>
+<!-- Top Section Card -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm mb-8">
+<div class="flex flex-col gap-6">
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Winning patterns for similar scholarships</h2>
+<!-- Stats -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="flex flex-col gap-2 rounded-lg p-4 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Top Theme</p>
+<p class="text-gray-900 dark:text-white text-xl font-bold">Community Impact</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-4 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Common Tone</p>
+<p class="text-gray-900 dark:text-white text-xl font-bold">Reflective &amp; Formal</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-4 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Typical Length</p>
+<p class="text-gray-900 dark:text-white text-xl font-bold">~500 words</p>
+</div>
+</div>
+<!-- Archetype Clusters List -->
+<div class="flex flex-col">
+<div class="flex items-center gap-4 py-4 border-b border-gray-200 dark:border-gray-800">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-medium">The Resilient Leader</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Focuses on overcoming personal challenges and demonstrating growth.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap justify-end shrink-0 max-w-xs">
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Leadership</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Grit</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200">Growth</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-4 border-b border-gray-200 dark:border-gray-800">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-medium">The Community Champion</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Highlights significant contributions to a community or cause.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap justify-end shrink-0 max-w-xs">
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">Impact</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Service</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">Empathy</span>
+</div>
+</div>
+<div class="flex items-center gap-4 py-4">
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-medium">The Specialized Innovator</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Demonstrates deep passion and expertise in a specific academic field.</p>
+</div>
+<div class="flex items-center gap-2 flex-wrap justify-end shrink-0 max-w-xs">
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200">Data-driven</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">Expertise</span>
+<span class="px-2.5 py-0.5 text-xs font-medium rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Curiosity</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Section with Tabs -->
+<section>
+<div class="border-b border-gray-200 dark:border-gray-700">
+<nav aria-label="Tabs" class="-mb-px flex space-x-6">
+<button class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-primary text-primary">Messaging Patterns</button>
+<button class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:border-gray-600">Example Snippets</button>
+<button class="whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:border-gray-600">Strategy Suggestions</button>
+</nav>
+</div>
+<!-- Tab Content -->
+<div class="pt-8">
+<!-- Messaging Patterns Content -->
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-4 bg-white dark:bg-gray-900 p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div class="flex flex-col">
+<p class="text-gray-900 dark:text-white text-base font-medium">Use the STAR Method</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Structure your stories around Situation, Task, Action, and Result to clearly demonstrate your accomplishments.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-white dark:bg-gray-900 p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div class="flex flex-col">
+<p class="text-gray-900 dark:text-white text-base font-medium">Quantify Your Impact</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Whenever possible, use numbers and data to show the tangible results of your efforts (e.g., "raised over $2,000," "improved efficiency by 15%").</p>
+</div>
+</div>
+<div class="flex items-start gap-4 bg-white dark:bg-gray-900 p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+<span class="material-symbols-outlined text-green-500 mt-1">check_circle</span>
+<div class="flex flex-col">
+<p class="text-gray-900 dark:text-white text-base font-medium">Connect to the Scholarship's Mission</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Explicitly link your personal story, goals, and values to the mission and values of the scholarship provider.</p>
+</div>
+</div>
+</div>
+<!-- Example Snippets (Hidden) -->
+<div class="hidden">
+<!-- Snippets content would go here -->
+</div>
+<!-- Strategy Suggestions (Hidden) -->
+<div class="hidden">
+<!-- Strategy content would go here -->
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</body></html>

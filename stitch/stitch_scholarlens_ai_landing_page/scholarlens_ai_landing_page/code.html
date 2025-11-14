@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ScholarLens AI - AI-Powered Scholarship Essays</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3A7AFE",
+              "secondary": "#7F56D9",
+              "background-light": "#F8FAFC",
+              "background-dark": "#0F172A",
+              "surface": "#FFFFFF",
+              "text-main": "#0F172A",
+              "text-muted": "#64748B",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"],
+              "heading": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "12px",
+              "lg": "16px",
+              "xl": "24px",
+              "full": "9999px"
+            },
+            boxShadow: {
+                'glow-primary': '0 0 40px 0 rgba(58, 122, 254, 0.3)',
+                'glow-secondary': '0 0 60px 0 rgba(127, 86, 217, 0.25)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-background-light/80 backdrop-blur-lg dark:border-slate-800/80 dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between whitespace-nowrap px-8 py-4">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="font-heading text-xl font-bold tracking-tighter text-text-main dark:text-white">ScholarLens AI</h2>
+</div>
+<div class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Product</a>
+<a class="text-sm font-medium text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">How it works</a>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent px-4 text-sm font-bold leading-normal tracking-[-0.015em] text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary">
+<span class="truncate">Sign in</span>
+</button>
+<button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold leading-normal text-white shadow-sm transition-opacity hover:opacity-90">
+<span class="truncate">Start free</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative overflow-hidden py-20 md:py-32">
+<div class="absolute inset-0 -z-10 bg-grid-slate-200/[0.4] [mask-image:radial-gradient(100%_70%_at_50%_0%,white,transparent)] dark:bg-grid-slate-800/[0.2]"></div>
+<div class="mx-auto flex max-w-7xl flex-col items-center gap-12 px-8">
+<div class="flex flex-col items-center gap-8 text-center">
+<div class="flex flex-col items-center gap-4">
+<h1 class="font-heading text-4xl font-bold leading-tight tracking-tighter text-text-main dark:text-white md:text-6xl">
+                                Scholarship essays that speak the scholarship’s language.
+                            </h1>
+<h2 class="max-w-2xl text-lg font-normal leading-relaxed text-text-muted dark:text-slate-400">
+                                Our AI analyzes scholarship criteria to generate highly targeted essays, helping you stand out and win.
+                            </h2>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold leading-normal text-white shadow-lg shadow-primary/30 transition-opacity hover:opacity-90">
+<span class="truncate">Get Started</span>
+</button>
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg border border-slate-300 bg-surface px-6 text-base font-bold leading-normal text-text-main transition-colors hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:hover:border-slate-600 dark:hover:bg-slate-700">
+<span class="truncate">Try a Sample Scholarship</span>
+</button>
+</div>
+</div>
+<div class="relative w-full max-w-4xl">
+<div class="absolute -inset-16 z-0 rounded-full bg-secondary/20 blur-3xl shadow-glow-secondary"></div>
+<div class="absolute -inset-8 z-0 rounded-full bg-primary/30 blur-3xl shadow-glow-primary"></div>
+<div class="relative w-full rounded-xl bg-surface/50 p-2 shadow-2xl shadow-slate-900/10 backdrop-blur-md dark:bg-slate-900/50 dark:shadow-slate-900/50">
+<div class="h-full w-full rounded-lg bg-surface p-4 dark:bg-slate-900">
+<div class="flex items-center gap-1.5 pb-3">
+<div class="size-3 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="size-3 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="size-3 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3 rounded-lg border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-800/50">
+<div class="flex size-10 items-center justify-center rounded-lg bg-secondary/10 text-secondary"><span class="material-symbols-outlined">person</span></div>
+<div>
+<p class="font-bold text-text-main dark:text-white">Persona: Ambitious STEM Innovator</p>
+<p class="text-sm text-text-muted">Creative | Leader | Resilient</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="col-span-1 rounded-lg border border-slate-200 p-3 dark:border-slate-800">
+<p class="mb-2 text-sm font-bold text-text-main dark:text-white">Trait Analysis</p>
+<img class="aspect-square opacity-70 dark:invert" data-alt="A simplified radar chart showing personality traits" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpthk1PHS483WEPZob6ZyBhOZBHjTI8cBqc9FyR5jb1TuWXGsdFk7l88K9_ZoLCFhVaIeBa6KjG3jW4Ndir_nWxE_UcMLo5TZaZ_C-p_wcGqkphM9HWtW3jp9qrSc5ULlzmF97OKrus487pouAlwPRUNFaO9MEffNWhEI4HbvHkNTGfta5ejL3J5QglpAqfR6rshChVZRbDcf1Hhixi-MFAm9A6J6vzKkxrTx849CdGd_Ekt14NPKMh5oQgjhMNLrkWMTcL8MrmdUy"/>
+</div>
+<div class="col-span-2 space-y-2">
+<div class="rounded-lg border border-slate-200 p-3 dark:border-slate-800">
+<div class="h-3 w-4/5 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="mt-2 h-2.5 w-full rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="mt-1.5 h-2.5 w-3/4 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+</div>
+<div class="rounded-lg border border-slate-200 p-3 opacity-60 dark:border-slate-800">
+<div class="h-3 w-3/5 rounded-full bg-slate-200 dark:bg-slate-700"></div>
+<div class="mt-2 h-2.5 w-full rounded-full bg-slate-200 dark:bg-slate-700"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 md:py-32">
+<div class="mx-auto flex max-w-7xl flex-col gap-12 px-8">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="font-heading text-3xl font-bold leading-tight tracking-tighter text-text-main dark:text-white md:text-4xl">
+                            Unlock Your Winning Potential
+                        </h2>
+<p class="mx-auto max-w-2xl text-lg text-text-muted dark:text-slate-400">
+                            ScholarLens AI combines deep analysis with powerful generation to give you a competitive edge.
+                        </p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-surface p-8 transition-shadow hover:shadow-xl hover:shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-slate-900/20">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">fingerprint</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white">Scholarship Persona Genome</h3>
+<p class="text-base font-normal leading-relaxed text-text-muted dark:text-slate-400">
+                                    Our AI creates a detailed profile of your unique strengths, experiences, and goals to tailor every word.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-surface p-8 transition-shadow hover:shadow-xl hover:shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-slate-900/20">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white">Winning Pattern Insights</h3>
+<p class="text-base font-normal leading-relaxed text-text-muted dark:text-slate-400">
+                                    We analyze thousands of successful essays and scholarship prompts to identify key themes and winning patterns.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-slate-200 bg-surface p-8 transition-shadow hover:shadow-xl hover:shadow-slate-900/5 dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-slate-900/20">
+<div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">tune</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white">Dynamic Essay Optimizer</h3>
+<p class="text-base font-normal leading-relaxed text-text-muted dark:text-slate-400">
+                                    Generate and refine essay content in real-time, ensuring it aligns perfectly with the scholarship's criteria.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-900/50">
+<div class="mx-auto max-w-7xl px-8 py-16">
+<div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+<div class="flex flex-col items-center gap-2 md:items-start">
+<div class="flex items-center gap-3">
+<div class="size-7 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="font-heading text-lg font-bold tracking-tighter text-text-main dark:text-white">ScholarLens AI</h2>
+</div>
+<p class="text-sm text-text-muted dark:text-slate-400">© 2024 ScholarLens AI. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-sm font-medium text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Terms of Service</a>
+<a class="text-sm font-medium text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-sm font-medium text-text-muted transition-colors hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

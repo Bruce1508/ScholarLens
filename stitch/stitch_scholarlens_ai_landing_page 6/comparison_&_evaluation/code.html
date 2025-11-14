@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Essay Comparison &amp; Evaluation - ScholarLens AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3d82fa",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                        "slate-gray": "#2C3E50",
+                        "accent-purple": "#8A2BE2",
+                        "accent-blue": "#3498DB",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-slate-gray">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar Component -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200/10 bg-white dark:bg-slate-gray px-4 sm:px-6 lg:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-slate-800 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-slate-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ScholarLens AI</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Dashboard</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Essay Generator</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Comparison</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Profile</a>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Export Report</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-slate-100 dark:bg-slate-gray-800 text-slate-800 dark:text-slate-200 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBorOB6z5KiUDjX_y1QjfdQsElZ67GssLWO5wat7h9aNEw_zlC8Dl2YV8-4S5YQvnp9QS5KDci3IWAwTYbZgRgHwB5FlAYzu5G5j8_3w9o1z0DLdBLmplKkFxt8ISTnJiHiXouk3Q_J0NvL2fZGblF5HZgQrJ-ZtjoVhnhd53f_IIxqL0MDQD39guGXNMnzM9hThMaqvVpkWVaqyCRtozl6iZe3CGAmxa0KuaXI_1NGaCAjya1vaMjD3D31AMMOIPeUwZhCgtmsIueg");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-10 py-8">
+<div class="layout-content-container flex flex-col max-w-7xl mx-auto w-full">
+<!-- PageHeading Component -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<p class="text-slate-800 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Essay Comparison &amp; Evaluation</p>
+</div>
+<!-- Stats Component (Summary Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Overall Alignment Gain</p>
+<p class="text-slate-800 dark:text-white tracking-light text-3xl font-bold leading-tight text-accent-purple">+0.22</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Tone Consistency</p>
+<p class="text-slate-800 dark:text-white tracking-light text-3xl font-bold leading-tight">0.91</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Top Trait Match</p>
+<p class="text-slate-800 dark:text-white tracking-light text-3xl font-bold leading-tight">Leadership</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700">
+<p class="text-slate-600 dark:text-slate-300 text-base font-medium leading-normal">Keyword Density</p>
+<p class="text-slate-800 dark:text-white tracking-light text-3xl font-bold leading-tight text-accent-purple">+15%</p>
+</div>
+</div>
+<!-- SectionHeader Component -->
+<h2 class="text-slate-800 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">Side-by-Side Comparison</h2>
+<!-- Side-by-Side View -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 px-4">
+<!-- Generic Essay Column -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200">Your Generic Essay</h3>
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+<h4 class="font-bold text-slate-800 dark:text-white">Introduction</h4>
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed">My interest in computer science started when I built my first computer. This experience taught me a lot about hardware and software. Since then, I have been passionate about learning new technologies and applying them to solve problems.</p>
+</div>
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+<h4 class="font-bold text-slate-800 dark:text-white">Paragraph 1</h4>
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed">In my high school robotics club, I was the lead programmer. We competed in several competitions and I learned about teamwork and persistence. It was a challenging yet rewarding experience that confirmed my desire to pursue a degree in this field.</p>
+</div>
+</div>
+<!-- Adaptive Essay Column -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-semibold text-slate-700 dark:text-slate-200">ScholarLens Adaptive Essay</h3>
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-slate-800 dark:text-white">Introduction</h4>
+<div class="flex items-center gap-2" title="Innovation &amp; Academics">
+<span class="material-symbols-outlined text-accent-purple text-lg">lightbulb</span>
+<span class="material-symbols-outlined text-accent-purple text-lg">school</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed">My journey into computer science was sparked by the tangible challenge of building my first PC. This hands-on project not only demystified the interplay of hardware and software but <span class="bg-accent-purple/10 dark:bg-accent-purple/20 rounded-md px-1 py-0.5">ignited a relentless curiosity to leverage emerging technologies for innovative problem-solving, aligning perfectly with this university's research focus.</span></p>
+</div>
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-slate-800 dark:text-white">Paragraph 1</h4>
+<div class="flex items-center gap-2" title="Leadership &amp; Community">
+<span class="material-symbols-outlined text-accent-purple text-lg">military_tech</span>
+<span class="material-symbols-outlined text-accent-purple text-lg">groups</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-300 leading-relaxed">As the lead programmer for my high school's robotics club, I spearheaded the software development for our competition robot. <span class="bg-accent-purple/10 dark:bg-accent-purple/20 rounded-md px-1 py-0.5">This leadership role required me to mentor junior members and foster a collaborative environment,</span> skills that are crucial for contributing to a vibrant campus community. The experience reinforced my passion and prepared me for the rigorous, team-based projects in your engineering program.</p>
+</div>
+</div>
+</div>
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 mt-8">
+<!-- Radar Chart Card -->
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-4">Trait Alignment Profile</h3>
+<div class="relative h-80">
+<img class="w-full h-full object-contain" data-alt="Radar chart showing trait alignment for Generic vs. Adaptive essays, with axes for Leadership, Community, Academics, Innovation, Need, and Research." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR5ei1yMqY6lrrnUvFcDxC-rLzwEu5SAwak9YvQCuMf-0S0fTymfVWXJVOmUASTgnYI4GBnwnJMi2FfrKvtZQEGy1sG5So_Mt0linw2tc0geIJ8LSioCGxCZjwEK8QfW90he4td7jsQmPBefonMLlC29gtmx_aPNB3vIPecc4P-K1z-Iw4-fbFo8dCYUVIZIsxEmh6ZXV8hDDPLXtU-rzBKO67xDJIkq1BN35Wr0Y5zJMMdg1ne6Y0AWZAcvlk9Lgloter-sxa-vcj"/>
+</div>
+</div>
+<!-- Bar Chart Card -->
+<div class="rounded-xl bg-white dark:bg-slate-gray/50 border border-slate-200 dark:border-slate-700 p-6">
+<h3 class="text-lg font-semibold text-slate-800 dark:text-white mb-4">Trait Score Comparison</h3>
+<div class="relative h-80">
+<img class="w-full h-full object-contain" data-alt="Bar chart comparing trait scores for Generic and Adaptive essays across Leadership, Community, Academics, Innovation, and Research." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx394-26953DflIoq2KJ4xkjhcWaz6jZziZC2swWkCEdvSO_u4-C4AVN_VF01kaPa8nl5-IEt4bbeR_sJ4a_gUfBL2JykAzJsftggdMIYRDy0LdKBuFqjLdVeFxoRYRUsEGg3Hbhu07XQwy3J2lx8LmF5ulieoaTiOpzwyjisxfJqw9qC7S7wJf54b9PYad4PJAbHerAHqT03hXSncsTVekdJy5W_QZeiG_a2bJutnUHvp5a9ByG4xvZViI2CNhGTmPsLp7zXhiOpc"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

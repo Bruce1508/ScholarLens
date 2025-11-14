@@ -1,0 +1,77 @@
+SARAH JENNIFER CHEN
+sarah.chen@email.com | (555) 123-4567 | LinkedIn: linkedin.com/in/sarahchen
+
+EDUCATION
+Stanford University                                                                      Stanford, CA
+Bachelor of Science in Computer Science                                                Expected June 2025
+GPA: 3.89/4.0
+Relevant Coursework: Machine Learning, Artificial Intelligence, Data Structures, Algorithms, Web Development
+
+WORK EXPERIENCE
+Software Engineering Intern                                                            June 2024 - August 2024
+Google | Mountain View, CA
+• Developed and deployed a machine learning model that improved search recommendation accuracy by 23%
+• Collaborated with a team of 6 engineers to redesign the user authentication system, reducing login time by 40%
+• Implemented automated testing scripts that increased code coverage from 65% to 92%
+• Presented findings to senior management and received excellent performance review
+
+Teaching Assistant                                                                      September 2023 - Present
+Stanford Computer Science Department | Stanford, CA
+• Lead weekly discussion sections for CS106B (Data Structures) with 30+ students
+• Hold office hours to provide personalized support to struggling students
+• Grade assignments and provide detailed feedback to help students improve
+• Achieved 4.8/5.0 rating from student evaluations
+
+Research Assistant                                                                      January 2023 - May 2023
+Stanford AI Lab | Stanford, CA
+• Conducted research on natural language processing for healthcare applications
+• Published paper in ACM conference on medical text classification
+• Developed Python scripts for data preprocessing and analysis
+• Collaborated with interdisciplinary team of doctors and computer scientists
+
+LEADERSHIP & ACTIVITIES
+President, Women in Computer Science Club                                              September 2023 - Present
+• Lead organization of 150+ members promoting diversity in tech
+• Organized hackathon with 200+ participants and secured $15,000 in sponsorships
+• Established mentorship program connecting 50 students with industry professionals
+
+Volunteer Tutor, Code for Kids                                                         June 2022 - Present
+• Teach programming basics to underprivileged middle school students
+• Developed curriculum for Python programming course
+• Mentored 20+ students, with 85% completing final projects
+
+SKILLS
+Programming Languages: Python, Java, JavaScript, C++, SQL, R
+Technologies: TensorFlow, React, Node.js, Docker, AWS, Git, MongoDB
+Languages: English (Native), Spanish (Fluent), Mandarin (Conversational)
+
+ACHIEVEMENTS & AWARDS
+• Dean's List: Fall 2022, Spring 2023, Fall 2023
+• First Place, Stanford Hackathon 2023 - Developed AI-powered mental health chatbot
+• Google Women Techmakers Scholar 2024
+• National Merit Scholar Finalist
+• Published research paper: "NLP Applications in Medical Text Classification" - ACM Digital Library
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• Google Cloud Professional Data Engineer
+• Stanford Machine Learning Certificate
+
+PERSONAL PROJECTS
+ScholarMatch AI                                                                        September 2024 - Present
+• Building an AI-powered platform to match students with scholarships using NLP
+• Implemented recommendation algorithm achieving 87% match accuracy
+• Deployed on AWS with React frontend and Python/FastAPI backend
+
+EcoTracker Mobile App                                                                   May 2024 - August 2024
+• Developed iOS app to track personal carbon footprint with 500+ downloads
+• Integrated machine learning for predictive analytics
+• Featured in Stanford Daily as "App of the Month"
+
+GOALS & INTERESTS
+Career Goal: To leverage AI and machine learning to create innovative solutions that improve healthcare
+accessibility and outcomes for underserved communities. Passionate about using technology for social good
+and mentoring the next generation of diverse tech leaders.
+
+Interests: Competitive programming, hiking, playing violin in Stanford Symphony Orchestra, volunteering
+at local animal shelter
